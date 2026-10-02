@@ -14,7 +14,7 @@
     "about.title": "About",
     "about.body":
       "<p>Monique Maccari is a visual artist born in Caxias do Sul, Brazil, with an extensive body of work in painting, drawing and digital photography — most of her collection being oil portraits. She has been painting since the age of nine.</p>" +
-      "<p>She holds a Bachelor of Visual Arts from the Institute of Arts at the Federal University of Rio Grande do Sul (UFRGS). Since 2016 she has been a member of <strong>Studio P — Open Painting Studio, Research and Outreach</strong>, coordinated by Marilice Villeroy Corona.</p>" +
+      "<p>She holds a Bachelor of Visual Arts from the Institute of Arts at the Federal University of Rio Grande do Sul (UFRGS). From 2016 to 2022 she was a member of <strong>Studio P — Open Painting Studio, Research and Outreach</strong>, an outreach project of the Institute of Arts coordinated by Marilice Villeroy Corona: a studio open to participants from outside the university, exploring contemporary painting in all its multiplicity — from hyperrealist representation to installation painting, from figuration to abstraction. With the group she took part in exhibitions, collective paintings and urban interventions.</p>" +
       "<p>Her research focuses on portraiture and landscape. She works from photographs of people she is close to, building the image through the brushstroke: intervention is part of the process, revealing personality through detail — the physical memory shaped by emotional and cultural memories.</p>" +
       "<p>She now lives in Australia, where she keeps painting and has also taken up ceramics as a member of the Gold Coast Potters Association.</p>",
     "about.quote": "“I have a strong relationship with portraits. In every painting or drawing I tried to capture the essence of these people.”",
@@ -42,7 +42,7 @@
     "cv.edu1b": "Undergraduate thesis (TCC 2020/1): “Um sítio para a pintura: a natureza como meio para aproximações” (“A site for painting: nature as a means of approach”), presented 25/11/2020, grade A. Supervisor: Marilice Villeroy Corona.",
     "cv.grad": "Graduating exhibition of the thesis “Um sítio para a pintura: a natureza como meio para aproximações”.",
     "cv.poster": "View poster",
-    "cv.edu2": "Open painting studio, research and outreach (UFRGS)",
+    "cv.edu2": "Open painting studio, research and outreach (Institute of Arts, UFRGS), coordinated by Marilice Villeroy Corona. Outreach project with 18 undergraduate and 2 master's students; participation certified on 06/08/2020.",
     "cv.edu3": "Undergraduate research scholarship BIC — UFRGS",
     "cv.edu3b": "“A representação na pintura contemporânea: procedimentos metapicturais e outras estratégias — a atualização do retrato” (Representation in contemporary painting: metapictorial procedures and other strategies — updating the portrait), theoretical-practical research in painting, presented at Salão UFRGS 2016.",
     "cv.bicposter": "View poster",
