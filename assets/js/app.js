@@ -14,7 +14,7 @@
     "about.title": "About",
     "about.body":
       "<p>Monique Maccari is a visual artist born in Caxias do Sul, Brazil, with an extensive body of work in painting, drawing and digital photography — most of her collection being oil portraits. She has been painting since the age of nine.</p>" +
-      "<p>She holds a Bachelor of Visual Arts from the Institute of Arts at the Federal University of Rio Grande do Sul (UFRGS). From 2016 to 2022 she was a member of <strong>Studio P — Open Painting Studio, Research and Outreach</strong>, an outreach project of the Institute of Arts coordinated by Marilice Villeroy Corona: a studio open to participants from outside the university, exploring contemporary painting in all its multiplicity — from hyperrealist representation to installation painting, from figuration to abstraction. With the group she took part in exhibitions, collective paintings and urban interventions.</p>" +
+      "<p>She holds a Bachelor of Visual Arts from the Institute of Arts at the Federal University of Rio Grande do Sul (UFRGS). From 2016 to 2022 she was a member of <strong>Studio P — Open Painting Studio, Research and Outreach</strong>, an outreach project of the Institute of Arts coordinated by Marilice Villeroy Corona: a studio open to participants from outside the university, exploring contemporary painting in all its multiplicity — from hyperrealist representation to installation painting, from figuration to abstraction. The group met weekly, hosted guest artists and theorists, and organised painting seminars, urban interventions and exhibitions — from its first group show at MARGS (2017) to the Curitiba Biennial (2019).</p>" +
       "<p>Her research focuses on portraiture and landscape. She works from photographs of people she is close to, building the image through the brushstroke: intervention is part of the process, revealing personality through detail — the physical memory shaped by emotional and cultural memories.</p>" +
       "<p>She now lives in Australia, where she keeps painting and has also taken up ceramics as a member of the Gold Coast Potters Association.</p>",
     "about.quote": "“I have a strong relationship with portraits. In every painting or drawing I tried to capture the essence of these people.”",
@@ -43,7 +43,9 @@
     "cv.ufpr": "Studio P at the Federal University of Paraná (UFPR)",
     "cv.feevale": "with Studio P",
     "cv.tua": "collective acrylic wall painting at the UFRGS Rectorate, Porto Alegre, unveiled 12/03/2020; designed by Artur Veloso, painted by Studio P",
-    "cv.maua": "Santander project, urban intervention",
+    "cv.maua": "mural on the Av. Mauá wall, Porto Alegre (April 2016), part of the Arte no Muro 2016 project by Santander Cultural",
+    "cv.escada": "urban intervention at the UFRGS Campus do Vale during Salão UFRGS 2016 (September), invited by the Department of Cultural Outreach and DAV-IA",
+    "cv.estudio": "Studio P's first group exhibition, alongside the II Painting Seminar: some questions for painting today.",
     "cv.edu": "Education & research",
     "cv.edu1": "Bachelor of Visual Arts",
     "cv.edu1b": "Undergraduate thesis (TCC 2020/1): “Um sítio para a pintura: a natureza como meio para aproximações” (“A site for painting: nature as a means of approach”), presented 25/11/2020, grade A. Supervisor: Marilice Villeroy Corona.",
