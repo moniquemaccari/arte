@@ -46,7 +46,7 @@ Objetivo: todos os perfis com a mesma bio, a mesma foto, localização na Austr�
 
 ## Matérias e páginas das exposições (mandar os links)
 
-Já ligadas no site: *3×4* (Pioneiro/GZH), *Quanto mais eu pinto…* (UFRGS Difusão Cultural), *Pinturas panorâmicas* (UFRGS).
+Já ligadas no site: *3×4* (Pioneiro/GZH), *Quanto mais eu pinto…* (UFRGS Difusão Cultural), *Pinturas panorâmicas* (UFRGS), *Gabinete a Céu Aberto / Arte no Muro* (G1).
 
 Faltam — procurar no Instagram do Studio P, nos sites da UFRGS, do MARGS e da Bienal de Curitiba, ou em prints antigos:
 
@@ -59,7 +59,6 @@ Faltam — procurar no Instagram do Studio P, nos sites da UFRGS, do MARGS e da 
 - [ ] *No eStúdio* — UFPR, 2018
 - [ ] *No eStúdio* — MARGS, 2017
 - [ ] *Conversas: Desenho e pintura em pauta* — Pinacoteca da Feevale, 2017
-- [ ] *Arte no Muro da Mauá* — Projeto Santander, 2016
-- [ ] *Escada de cor* e *Gabinete a Céu Aberto* — 2016
+- [ ] *Escadas de cor* — Salão UFRGS 2016, Campus do Vale
 - [ ] *No tempo dos alquimistas* — MARGS, 2015
 - [ ] Post do Instagram (instagram.com/p/B0s8X2ggQpT) — de qual exposição é?
