@@ -43,3 +43,23 @@ Objetivo: todos os perfis com a mesma bio, a mesma foto, localização na Austr�
 - [ ] Fotos das peças de cerâmica (para criar a categoria "Cerâmica")
 - [ ] Trabalhos feitos na Austrália (pinturas, desenhos)
 - [ ] Uma foto sua no ateliê (opcional, para o "Sobre")
+
+## Matérias e páginas das exposições (mandar os links)
+
+Já ligadas no site: *3×4* (Pioneiro/GZH), *Quanto mais eu pinto…* (UFRGS Difusão Cultural), *Pinturas panorâmicas* (UFRGS).
+
+Faltam — procurar no Instagram do Studio P, nos sites da UFRGS, do MARGS e da Bienal de Curitiba, ou em prints antigos:
+
+- [ ] *Bacharelado 2020* — Pinacoteca do IA/UFRGS, 2022
+- [ ] *CUBIC 4* — Bienal de Curitiba, Museu da Gravura, 2019–2020
+- [ ] *Fábbrica* — 2019
+- [ ] *Grafite de Giz* — Centro Cultural da UFRGS, 2019
+- [ ] *Painel TUA UFRGS* — Reitoria, 2020
+- [ ] *Dias de Vênus* — Casa Baka, 2018–2019
+- [ ] *No eStúdio* — UFPR, 2018
+- [ ] *No eStúdio* — MARGS, 2017
+- [ ] *Conversas: Desenho e pintura em pauta* — Pinacoteca da Feevale, 2017
+- [ ] *Arte no Muro da Mauá* — Projeto Santander, 2016
+- [ ] *Escada de cor* e *Gabinete a Céu Aberto* — 2016
+- [ ] *No tempo dos alquimistas* — MARGS, 2015
+- [ ] Post do Instagram (instagram.com/p/B0s8X2ggQpT) — de qual exposição é?
