@@ -343,18 +343,49 @@
   "date": "2020-12-16",
   "text": "Studio P. Panorâmica II, 2018. Acrílico sobre tela, 30x30cm (cada).",
   "src": [
+   "https://moniquemaccari.wordpress.com/wp-content/uploads/2020/12/studio-p-panoramica-ii-jardim-botanico-120-x-600-cm-80-telas-de-30-x-30.jpg",
    "https://moniquemaccari.wordpress.com/wp-content/uploads/2020/12/studio-p-panoramica-jardim-botanico-2.jpg",
    "https://moniquemaccari.wordpress.com/wp-content/uploads/2020/12/studio-p-panoramica-jardim-botanico-4.jpg",
    "https://moniquemaccari.wordpress.com/wp-content/uploads/2020/12/studio-p-panoramica-jardim-botanico-6.jpg",
    "https://moniquemaccari.wordpress.com/wp-content/uploads/2020/12/studio-p-panoramica-jardim-botanico-8.jpg",
-   "https://moniquemaccari.wordpress.com/wp-content/uploads/2020/12/studio-p-panoramica-ii-jardim-botanico-120-x-600-cm-80-telas-de-30-x-30.jpg"
+   "https://grupostudiop.wordpress.com/wp-content/uploads/2022/04/img_20181021_114210649.jpg",
+   "https://grupostudiop.wordpress.com/wp-content/uploads/2022/04/img_20181021_120530227_hdr.jpg",
+   "https://grupostudiop.wordpress.com/wp-content/uploads/2022/04/img_20181119_194611590.jpg",
+   "https://grupostudiop.wordpress.com/wp-content/uploads/2022/04/img_20181119_194640650.jpg",
+   "https://grupostudiop.wordpress.com/wp-content/uploads/2022/04/img_20181119_205952165.jpg",
+   "https://grupostudiop.wordpress.com/wp-content/uploads/2022/04/img_20181122_173521893.jpg",
+   "https://grupostudiop.wordpress.com/wp-content/uploads/2022/04/img_20181122_182844433.jpg",
+   "https://grupostudiop.wordpress.com/wp-content/uploads/2022/04/img_20181123_124655095.jpg"
   ],
   "images": [
+   "assets/img/panoramica-ii-studiop/05.jpg",
    "assets/img/panoramica-ii-studiop/01.jpg",
    "assets/img/panoramica-ii-studiop/02.jpg",
    "assets/img/panoramica-ii-studiop/03.jpg",
    "assets/img/panoramica-ii-studiop/04.jpg",
-   "assets/img/panoramica-ii-studiop/05.jpg"
+   "assets/img/panoramica-ii-studiop/06.jpg",
+   "assets/img/panoramica-ii-studiop/07.jpg",
+   "assets/img/panoramica-ii-studiop/08.jpg",
+   "assets/img/panoramica-ii-studiop/09.jpg",
+   "assets/img/panoramica-ii-studiop/10.jpg",
+   "assets/img/panoramica-ii-studiop/11.jpg",
+   "assets/img/panoramica-ii-studiop/12.jpg",
+   "assets/img/panoramica-ii-studiop/13.jpg"
+  ],
+  "captions": [
+   "Panorâmica II — Jardim Botânico, 2018, painel completo (120 × 600 cm)",
+   "",
+   "",
+   "",
+   "",
+   "Sessão de fotos de referência no Jardim Botânico, out. 2018. Foto: acervo Studio P",
+   "Piquenique-cena no Jardim Botânico, out. 2018. Foto: acervo Studio P",
+   "As 80 telas montadas no chão do ateliê, nov. 2018. Foto: acervo Studio P",
+   "Detalhe das telas em processo, nov. 2018. Foto: acervo Studio P",
+   "Conferência do painel no ateliê, nov. 2018. Foto: acervo Studio P",
+   "Montagem na Sala Fahrion, UFRGS, nov. 2018. Foto: acervo Studio P",
+   "Montagem na Sala Fahrion, UFRGS, nov. 2018. Foto: acervo Studio P",
+   "Painel montado na Sala Fahrion, UFRGS, nov. 2018. Foto: acervo Studio P"
   ]
  },
  {
@@ -649,6 +680,60 @@
    "assets/img/grace-and-philip/04.jpg",
    "assets/img/grace-and-philip/05.jpg",
    "assets/img/grace-and-philip/06.jpg"
+  ]
+ },
+ {
+  "slug": "gabinete-a-ceu-aberto",
+  "title": "Gabinete a céu aberto",
+  "date": "",
+  "text": "",
+  "src": [
+   "https://grupostudiop.wordpress.com/wp-content/uploads/2022/04/gabinete-a-ceu-aberto1-copy-copy3.jpg",
+   "https://grupostudiop.wordpress.com/wp-content/uploads/2022/04/gabinete-de-amadores-arte-no-muro-6326abril-04-2016.jpg",
+   "https://grupostudiop.wordpress.com/wp-content/uploads/2022/04/12901179_208611912850556_8704854651547976370_o.jpg"
+  ],
+  "images": [
+   "assets/img/gabinete-a-ceu-aberto/01.jpg",
+   "assets/img/gabinete-a-ceu-aberto/02.jpg",
+   "assets/img/gabinete-a-ceu-aberto/03.jpg"
+  ],
+  "captions": [
+   "Gabinete a céu aberto, muro da Av. Mauá, Porto Alegre, 2016. Foto: acervo Studio P",
+   "Detalhe. Foto: acervo Studio P",
+   "Processo de pintura, 02/04/2016. Foto: acervo Studio P"
+  ]
+ },
+ {
+  "slug": "no-estudio-margs",
+  "title": "No eStúdio — MARGS",
+  "date": "",
+  "text": "",
+  "src": [
+   "https://grupostudiop.wordpress.com/wp-content/uploads/2022/04/monique_1.jpg",
+   "https://grupostudiop.wordpress.com/wp-content/uploads/2022/04/19679480_447282382316840_1834743348324989900_o.jpg"
+  ],
+  "images": [
+   "assets/img/no-estudio-margs/01.jpg",
+   "assets/img/no-estudio-margs/02.jpg"
+  ],
+  "captions": [
+   "Obra de Monique Maccari na exposição No eStúdio, MARGS, 2017. Foto: acervo Studio P",
+   "Integrantes do Studio P. Foto: acervo Studio P"
+  ]
+ },
+ {
+  "slug": "quanto-mais-eu-pinto",
+  "title": "Quanto mais eu pinto, mais eu vejo…",
+  "date": "",
+  "text": "",
+  "src": [
+   "https://grupostudiop.wordpress.com/wp-content/uploads/2022/04/studio-pnovembro-24-2018-132.jpg"
+  ],
+  "images": [
+   "assets/img/quanto-mais-eu-pinto/01.jpg"
+  ],
+  "captions": [
+   "Integrantes do Studio P na abertura, Sala Fahrion, UFRGS, 24/11/2018, diante da Panorâmica I (Mercado Público). Foto: acervo Studio P"
   ]
  }
 ]

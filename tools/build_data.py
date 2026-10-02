@@ -11,7 +11,7 @@ CATEGORY = {
                    "gaivotas", "cockscomb", "pena", "meia", "retrato-fotografico", "detalhe",
                    "diario-de-bordo", "pintura-na-fotografia", "sem-titulo-2018", "neo",
                    "processos-quimicos-da-fotografia"],
-    "coletivo": ["panoramica-ii-studiop", "exposicao-fabbrica"],
+    "coletivo": ["panoramica-ii-studiop", "quanto-mais-eu-pinto", "no-estudio-margs", "gabinete-a-ceu-aberto", "exposicao-fabbrica"],
 }
 ORDER = [s for c in CATEGORY.values() for s in c]
 
@@ -45,10 +45,17 @@ META = {
     "processos-quimicos-da-fotografia": ("Processos químicos da fotografia", "2015",
                                          "Processos históricos de revelação (papel salgado e albuminado)",
                                          "Historical printing processes (salt and albumen prints)"),
-    "panoramica-ii-studiop": ("Panorâmica II — Studio P", "2018",
+    "panoramica-ii-studiop": ("Panorâmica II — Jardim Botânico (Studio P)", "2018",
                               "Acrílica sobre tela, 80 telas de 30 × 30 cm (120 × 600 cm)",
                               "Acrylic on canvas, 80 canvases of 30 × 30 cm (120 × 600 cm)"),
     "exposicao-fabbrica": ("Exposição Fábbrica", "2019", "Vista de exposição", "Exhibition view"),
+    "gabinete-a-ceu-aberto": ("Gabinete a céu aberto — Studio P", "2016",
+                              "Pintura coletiva no muro da Av. Mauá, Projeto Arte no Muro 2016",
+                              "Collective mural on the Av. Mauá wall, Arte no Muro 2016"),
+    "no-estudio-margs": ("No eStúdio — MARGS", "2017", "Exposição coletiva do Studio P, Sala João Fahrion, MARGS",
+                         "Studio P group exhibition, Sala João Fahrion, MARGS"),
+    "quanto-mais-eu-pinto": ("Quanto mais eu pinto, mais eu vejo…", "2018", "Exposição coletiva do Studio P, Sala Fahrion, UFRGS",
+                             "Studio P group exhibition, Sala Fahrion, UFRGS"),
 }
 
 
@@ -103,10 +110,11 @@ for slug in ORDER:
     s = by_slug[slug]
     title, year, tech_pt, tech_en = META[slug]
     imgs = []
-    for src, local in zip(s["src"], s["images"]):
+    caps = s.get("captions") or [""] * len(s["images"])
+    for src, local, cap in zip(s["src"], s["images"], caps):
         w, h = size(local)
         imgs.append({"src": local, "thumb": local.replace("assets/img/", "assets/thumbs/"),
-                     "w": w, "h": h, "caption": caption(src)})
+                     "w": w, "h": h, "caption": cap or caption(src)})
     data.append({"slug": slug, "category": cat_of[slug], "title": title, "year": year,
                  "technique": {"pt": tech_pt, "en": tech_en}, "images": imgs})
 

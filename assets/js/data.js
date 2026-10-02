@@ -1577,13 +1577,20 @@ window.WORKS = [
  {
   "slug": "panoramica-ii-studiop",
   "category": "coletivo",
-  "title": "Panorâmica II — Studio P",
+  "title": "Panorâmica II — Jardim Botânico (Studio P)",
   "year": "2018",
   "technique": {
    "pt": "Acrílica sobre tela, 80 telas de 30 × 30 cm (120 × 600 cm)",
    "en": "Acrylic on canvas, 80 canvases of 30 × 30 cm (120 × 600 cm)"
   },
   "images": [
+   {
+    "src": "assets/img/panoramica-ii-studiop/05.jpg",
+    "thumb": "assets/thumbs/panoramica-ii-studiop/05.jpg",
+    "w": 1400,
+    "h": 274,
+    "caption": "Panorâmica II — Jardim Botânico, 2018, painel completo (120 × 600 cm)"
+   },
    {
     "src": "assets/img/panoramica-ii-studiop/01.jpg",
     "thumb": "assets/thumbs/panoramica-ii-studiop/01.jpg",
@@ -1613,11 +1620,138 @@ window.WORKS = [
     "caption": ""
    },
    {
-    "src": "assets/img/panoramica-ii-studiop/05.jpg",
-    "thumb": "assets/thumbs/panoramica-ii-studiop/05.jpg",
+    "src": "assets/img/panoramica-ii-studiop/06.jpg",
+    "thumb": "assets/thumbs/panoramica-ii-studiop/06.jpg",
     "w": 1400,
-    "h": 274,
-    "caption": ""
+    "h": 1050,
+    "caption": "Sessão de fotos de referência no Jardim Botânico, out. 2018. Foto: acervo Studio P"
+   },
+   {
+    "src": "assets/img/panoramica-ii-studiop/07.jpg",
+    "thumb": "assets/thumbs/panoramica-ii-studiop/07.jpg",
+    "w": 1400,
+    "h": 1050,
+    "caption": "Piquenique-cena no Jardim Botânico, out. 2018. Foto: acervo Studio P"
+   },
+   {
+    "src": "assets/img/panoramica-ii-studiop/08.jpg",
+    "thumb": "assets/thumbs/panoramica-ii-studiop/08.jpg",
+    "w": 1400,
+    "h": 1050,
+    "caption": "As 80 telas montadas no chão do ateliê, nov. 2018. Foto: acervo Studio P"
+   },
+   {
+    "src": "assets/img/panoramica-ii-studiop/09.jpg",
+    "thumb": "assets/thumbs/panoramica-ii-studiop/09.jpg",
+    "w": 1400,
+    "h": 1050,
+    "caption": "Detalhe das telas em processo, nov. 2018. Foto: acervo Studio P"
+   },
+   {
+    "src": "assets/img/panoramica-ii-studiop/10.jpg",
+    "thumb": "assets/thumbs/panoramica-ii-studiop/10.jpg",
+    "w": 1050,
+    "h": 1400,
+    "caption": "Conferência do painel no ateliê, nov. 2018. Foto: acervo Studio P"
+   },
+   {
+    "src": "assets/img/panoramica-ii-studiop/11.jpg",
+    "thumb": "assets/thumbs/panoramica-ii-studiop/11.jpg",
+    "w": 1400,
+    "h": 1050,
+    "caption": "Montagem na Sala Fahrion, UFRGS, nov. 2018. Foto: acervo Studio P"
+   },
+   {
+    "src": "assets/img/panoramica-ii-studiop/12.jpg",
+    "thumb": "assets/thumbs/panoramica-ii-studiop/12.jpg",
+    "w": 1400,
+    "h": 1050,
+    "caption": "Montagem na Sala Fahrion, UFRGS, nov. 2018. Foto: acervo Studio P"
+   },
+   {
+    "src": "assets/img/panoramica-ii-studiop/13.jpg",
+    "thumb": "assets/thumbs/panoramica-ii-studiop/13.jpg",
+    "w": 1400,
+    "h": 1050,
+    "caption": "Painel montado na Sala Fahrion, UFRGS, nov. 2018. Foto: acervo Studio P"
+   }
+  ]
+ },
+ {
+  "slug": "quanto-mais-eu-pinto",
+  "category": "coletivo",
+  "title": "Quanto mais eu pinto, mais eu vejo…",
+  "year": "2018",
+  "technique": {
+   "pt": "Exposição coletiva do Studio P, Sala Fahrion, UFRGS",
+   "en": "Studio P group exhibition, Sala Fahrion, UFRGS"
+  },
+  "images": [
+   {
+    "src": "assets/img/quanto-mais-eu-pinto/01.jpg",
+    "thumb": "assets/thumbs/quanto-mais-eu-pinto/01.jpg",
+    "w": 1400,
+    "h": 937,
+    "caption": "Integrantes do Studio P na abertura, Sala Fahrion, UFRGS, 24/11/2018, diante da Panorâmica I (Mercado Público). Foto: acervo Studio P"
+   }
+  ]
+ },
+ {
+  "slug": "no-estudio-margs",
+  "category": "coletivo",
+  "title": "No eStúdio — MARGS",
+  "year": "2017",
+  "technique": {
+   "pt": "Exposição coletiva do Studio P, Sala João Fahrion, MARGS",
+   "en": "Studio P group exhibition, Sala João Fahrion, MARGS"
+  },
+  "images": [
+   {
+    "src": "assets/img/no-estudio-margs/01.jpg",
+    "thumb": "assets/thumbs/no-estudio-margs/01.jpg",
+    "w": 932,
+    "h": 1400,
+    "caption": "Obra de Monique Maccari na exposição No eStúdio, MARGS, 2017. Foto: acervo Studio P"
+   },
+   {
+    "src": "assets/img/no-estudio-margs/02.jpg",
+    "thumb": "assets/thumbs/no-estudio-margs/02.jpg",
+    "w": 1280,
+    "h": 756,
+    "caption": "Integrantes do Studio P. Foto: acervo Studio P"
+   }
+  ]
+ },
+ {
+  "slug": "gabinete-a-ceu-aberto",
+  "category": "coletivo",
+  "title": "Gabinete a céu aberto — Studio P",
+  "year": "2016",
+  "technique": {
+   "pt": "Pintura coletiva no muro da Av. Mauá, Projeto Arte no Muro 2016",
+   "en": "Collective mural on the Av. Mauá wall, Arte no Muro 2016"
+  },
+  "images": [
+   {
+    "src": "assets/img/gabinete-a-ceu-aberto/01.jpg",
+    "thumb": "assets/thumbs/gabinete-a-ceu-aberto/01.jpg",
+    "w": 1400,
+    "h": 249,
+    "caption": "Gabinete a céu aberto, muro da Av. Mauá, Porto Alegre, 2016. Foto: acervo Studio P"
+   },
+   {
+    "src": "assets/img/gabinete-a-ceu-aberto/02.jpg",
+    "thumb": "assets/thumbs/gabinete-a-ceu-aberto/02.jpg",
+    "w": 1400,
+    "h": 937,
+    "caption": "Detalhe. Foto: acervo Studio P"
+   },
+   {
+    "src": "assets/img/gabinete-a-ceu-aberto/03.jpg",
+    "thumb": "assets/thumbs/gabinete-a-ceu-aberto/03.jpg",
+    "w": 1400,
+    "h": 787,
+    "caption": "Processo de pintura, 02/04/2016. Foto: acervo Studio P"
    }
   ]
  },
