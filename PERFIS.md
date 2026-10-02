@@ -25,6 +25,8 @@ Objetivo: todos os perfis com a mesma bio, a mesma foto, localização na Austr�
   - [ ] Exposição individual *3×4* (Reffugio Art Café, 2019) e coletiva *Fábbrica* (2019)
   - [ ] Cursos: cerâmica na Gold Coast Potters Association (2024–2025) e Kiln Workshop (2025)
   - [ ] Atualizar o resumo (hoje diz "estudante de graduação")
+  - [ ] No resumo, usar: *"Tem experiência na área de Artes, com ênfase em Artes Visuais, atuando principalmente nos seguintes temas: pintura, pintura coletiva, fotografia, artes visuais e artes."*
+  - [ ] Conferir as palavras-chave das produções (pintura, pintura coletiva, fotografia), porque é delas que o Lattes monta essa frase
   - [ ] Link do site novo
 - [ ] **Behance** (behance.net/moniquemaccari) — a localização ainda diz Porto Alegre
   - [ ] Atualizar localização, bio e link do site
