@@ -16,7 +16,7 @@
       "<p>Monique Maccari is a visual artist born in Caxias do Sul, Brazil, with an extensive body of work in painting, drawing and digital photography — most of her collection being oil portraits. She has been painting since the age of nine.</p>" +
       "<p>She holds a Bachelor of Visual Arts from the Institute of Arts at the Federal University of Rio Grande do Sul (UFRGS). Since 2016 she has been a member of <strong>Studio P — Open Painting Studio, Research and Outreach</strong>, coordinated by Marilice Villeroy Corona.</p>" +
       "<p>Her research focuses on portraiture and landscape. She works from photographs of people she is close to, building the image through the brushstroke: intervention is part of the process, revealing personality through detail — the physical memory shaped by emotional and cultural memories.</p>" +
-      "<p>She now lives in Australia, where she keeps painting.</p>",
+      "<p>She now lives in Australia, where she keeps painting and has also taken up ceramics as a member of the Gold Coast Potters Association.</p>",
     "about.quote": "“I have a strong relationship with portraits. In every painting or drawing I tried to capture the essence of these people.”",
     "about.quoteSrc": "Pioneiro newspaper, 2019",
     "cv.title": "CV",
@@ -40,6 +40,9 @@
     "cv.edu3b": "“Representing personality through the painted portrait”, theoretical-practical research in painting.",
     "cv.events": "Workshops, seminars & talks",
     "cv.kiln": "with Porsche Owen",
+    "cv.pottery": "Pottery classes",
+    "cv.pottery1": "with Jo Mackenzie (Amare Ceramics)",
+    "cv.pottery2": "Australia, as a member of the association (Apr 2024 – Jun 2025)",
     "press.title": "Press & links",
     "press.p1": "“3x4” exhibition by Caxias-born artist Monique Maccari opens to the public",
     "press.p3": "Portfolio on Behance",
