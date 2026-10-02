@@ -57,4 +57,5 @@ Faltam — procurar no Instagram do Studio P, nos sites da UFRGS, do MARGS e da 
 - [ ] *Dias de Vênus* — Casa Baka, 2018–2019
 - [ ] *No tempo dos alquimistas* — MARGS, 2015
 - [ ] Curta *Na UFRGS* (você aparece pintando) — de que ano é, e tem link do vídeo (YouTube/UFRGS TV)?
+- [ ] Escadaria pintada no início de 2018 (Campus do Vale/Letras) — nome do projeto, data exata, foto ou link
 - [ ] Post do Instagram (instagram.com/p/B0s8X2ggQpT) — de qual exposição é?
