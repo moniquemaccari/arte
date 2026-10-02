@@ -76,7 +76,7 @@
     "press.title": "Press & links",
     "press.p1": "“3x4” exhibition by Caxias-born artist Monique Maccari opens to the public",
     "press.p3": "Portfolio on Behance",
-    "press.p4": "Instagram post",
+    "press.p4": "Grafite de Giz — Studio P chalk mural at the UFRGS Cultural Centre",
     "press.p5": "Lattes CV (Brazilian academic CV)",
     "press.p6": "Previous website",
     "contact.title": "Contact",
