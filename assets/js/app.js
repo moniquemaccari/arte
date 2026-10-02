@@ -29,7 +29,7 @@
     "cv.cur1": "group exhibition",
     "cv.cur2": "co-organiser of the Studio P group exhibition",
     "cv.interventions": "Art interventions (Studio P)",
-    "cv.int2": "at the invitation of Laura Castilhos",
+    "cv.int2": "chalk mural at the UFRGS Cultural Centre (Centro Cultural da UFRGS), at the invitation of Laura Castilhos",
     "cv.int5": "80 canvases, Botanical Garden",
     "cv.urban": "urban intervention",
     "cv.edu": "Education & research",
