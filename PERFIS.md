@@ -1,0 +1,43 @@
+# Perfis online — lista para reativar e atualizar
+
+Objetivo: todos os perfis com a mesma bio, a mesma foto, localização na Austrália e um link para o site novo.
+
+**Bio curta (copiar e colar):**
+> Artista visual brasileira radicada na Gold Coast, Austrália. Pintura a óleo, desenho, fotografia e cerâmica. Bacharela em Artes Visuais (UFRGS).
+>
+> *Brazilian visual artist based on the Gold Coast, Australia. Oil painting, drawing, photography and ceramics. BFA, Federal University of Rio Grande do Sul (UFRGS).*
+
+## Lista
+
+- [ ] **Site novo** — publicar no GitHub Pages (depois, se quiser, um domínio próprio, por exemplo moniquemaccari.com)
+- [ ] **LinkedIn** — reativar a conta e recuperar a senha
+  - [ ] Título: *Visual Artist · Painter · Gold Coast*
+  - [ ] Localização: Gold Coast, Queensland, Australia
+  - [ ] Formação: Bacharelado em Artes Visuais (UFRGS), BIC-UFRGS 2015–16
+  - [ ] Experiência: Studio P (2016–), exposições, curadoria de *Dias de Vênus*
+  - [ ] Cursos: aulas de cerâmica com Jo Mackenzie, Amare Ceramics (abr. 2024 – jun. 2025); Kiln Workshop com Porsche Owen (jan. 2025)
+  - [ ] Link do site na seção "Contato" / "Destaques"
+  - [ ] Decidir se entram os trabalhos atuais (pintora de casas, disability support worker)
+  - [ ] Mandar a URL do perfil para eu colocar no site
+- [ ] **Currículo Lattes** (http://lattes.cnpq.br/7613681593028724) — entrar com gov.br/CPF e atualizar
+  - [ ] Marcar a graduação em Artes Visuais (UFRGS) como concluída, com o ano
+  - [ ] Endereço/país atual: Austrália
+  - [ ] Exposição individual *3×4* (Reffugio Art Café, 2019) e coletiva *Fábbrica* (2019)
+  - [ ] Cursos: cerâmica na Gold Coast Potters Association (2024–2025) e Kiln Workshop (2025)
+  - [ ] Atualizar o resumo (hoje diz "estudante de graduação")
+  - [ ] Link do site novo
+- [ ] **Behance** (behance.net/moniquemaccari) — a localização ainda diz Porto Alegre
+  - [ ] Atualizar localização, bio e link do site
+  - [ ] Subir as séries novas (Nanquim 2021, O Vermelho, cerâmica)
+- [ ] **Instagram** — confirmar o acesso; bio igual à de cima e link do site
+- [ ] **Artmajeur** (artmajeur.com/monique-maccari) — o perfil existe (é de lá a imagem da *Gabi*, 2016); recuperar o acesso e decidir se continua (serve para vender)
+- [ ] **WordPress antigo** (moniquemaccari.wordpress.com) — depois que o site novo estiver no ar, colocar um aviso com o link novo ou desativar, para não ficarem dois portfólios desatualizados
+- [ ] **Gold Coast Potters Association** — ver se há página de membros ou galeria onde dá para incluir o perfil
+- [ ] **E-mail** — usar o mesmo contato (moniquemaccari@gmail.com) em todos os perfis
+
+## Para trazer para o site
+
+- [ ] URL do LinkedIn
+- [ ] Fotos das peças de cerâmica (para criar a categoria "Cerâmica")
+- [ ] Trabalhos feitos na Austrália (pinturas, desenhos)
+- [ ] Uma foto sua no ateliê (opcional, para o "Sobre")
