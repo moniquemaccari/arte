@@ -2,6 +2,12 @@
 
 Objetivo: todos os perfis com a mesma bio, a mesma foto, localização na Austrália e um link para o site novo.
 
+**Bio de uma linha (Instagram):**
+> Artista visual · pintura, desenho, fotografia e cerâmica · Bacharela em Artes Visuais (UFRGS) · ex-Studio P · Gold Coast, Austrália · moniquemaccari@gmail.com
+
+**Cabeçalho (sites, PIPA, editais):**
+> Caxias do Sul, Brasil, 1996 — Vive e trabalha na Gold Coast, Austrália
+
 **Bio curta (copiar e colar):**
 > Artista visual brasileira radicada na Gold Coast, Austrália. Pintura a óleo, desenho, fotografia e cerâmica. Bacharela em Artes Visuais (UFRGS).
 >
