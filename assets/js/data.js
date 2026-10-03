@@ -1580,8 +1580,8 @@ window.WORKS = [
   "title": "Panorâmica II — Jardim Botânico (Studio P)",
   "year": "2018",
   "technique": {
-   "pt": "Acrílica sobre tela, 80 telas de 30 × 30 cm (120 × 600 cm)",
-   "en": "Acrylic on canvas, 80 canvases of 30 × 30 cm (120 × 600 cm)"
+   "pt": "Acrílica sobre tela, 80 telas de 30 × 30 cm (120 × 600 cm) — homenagem a Thiana Sehn",
+   "en": "Acrylic on canvas, 80 canvases of 30 × 30 cm (120 × 600 cm) — tribute to Thiana Sehn"
   },
   "images": [
    {
