@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Planejador de viagem — demo</title>
+<meta name="description" content="Demo de um app web para planejar uma viagem em grupo: contagem regressiva, tarefas por pessoa, mala, roteiro dia a dia e custos. Dados fictícios.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sand:#fbf4e8; --card:#fffdf8; --ink:#1d2a2a; --muted:#5f6b6a; --line:#eadfcd;
+  --sea:#0f7c86; --sea-2:#d8f0ee; --sun:#f2a33a; --sun-2:#fdebd0; --coral:#e2574c; --leaf:#3a8f5b;
+  --a:#7a4fd6; --b:#0f7c86; --both:#e2574c;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--sand);color:var(--ink);font:15px/1.55 "Work Sans",system-ui,sans-serif}
+a{color:var(--sea)}
+.demo-bar{background:var(--ink);color:#fff;font-size:.82rem;padding:8px 16px;text-align:center}
+.demo-bar a{color:#ffd79a}
+header.hero{padding:36px 16px 28px;text-align:center;background:linear-gradient(180deg,#bfe7e4 0%,#fbf4e8 100%)}
+.kicker{font:700 .72rem "Space Mono",monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--sea)}
+h1{font:800 clamp(2rem,8vw,3.2rem)/1 "Baloo 2",sans-serif;margin:.3rem 0}
+h2{font:800 1.6rem/1.1 "Baloo 2",sans-serif;margin:0 0 .4rem}
+h3{font:600 1.15rem/1.2 "Baloo 2",sans-serif;margin:0}
+.count{display:flex;gap:10px;justify-content:center;margin:18px 0}
+.count div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:8px 12px;min-width:68px}
+.count b{display:block;font:700 1.5rem "Space Mono",monospace}
+.count span{font-size:.72rem;color:var(--muted)}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px;max-width:720px;margin:0 auto}
+.facts div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px;text-align:left}
+.facts small{display:block;color:var(--muted);font-size:.72rem;text-transform:uppercase;letter-spacing:.08em}
+nav.tabs{position:sticky;top:0;z-index:5;display:flex;gap:6px;overflow-x:auto;padding:10px 16px;background:rgba(251,244,232,.95);border-bottom:1px solid var(--line)}
+nav.tabs a{flex:none;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--card);border-radius:999px;padding:6px 14px;font-weight:500;font-size:.88rem}
+main{max-width:760px;margin:0 auto;padding:0 16px 60px}
+section{padding-top:30px}
+.lead{color:var(--muted);margin:0 0 14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;margin-bottom:10px}
+/* tasks */
+.filters{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.filters button,.chip{font:600 .78rem "Work Sans",system-ui,sans-serif;border-radius:999px;border:1px solid var(--line);background:var(--card);padding:5px 11px;cursor:pointer;color:var(--ink)}
+.filters button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.task{display:flex;align-items:center;gap:10px;padding:10px 4px;border-bottom:1px dashed var(--line)}
+.task:last-child{border-bottom:0}
+.task input{width:22px;height:22px;accent-color:var(--leaf);flex:none}
+.task.done .t{text-decoration:line-through;color:var(--muted)}
+.task .t{flex:1}
+.chip.A{background:#efe7fd;color:var(--a);border-color:#d9c8fb}
+.chip.B{background:var(--sea-2);color:var(--b);border-color:#b5e1dd}
+.chip.both{background:#fde3e0;color:var(--both);border-color:#f8c3bd}
+.add{display:flex;gap:8px;margin-top:10px}
+.add input{flex:1;min-width:0;border:1px solid var(--line);border-radius:10px;padding:9px 10px;font:inherit;background:#fff}
+.add button,.btn{border:0;border-radius:10px;background:var(--sea);color:#fff;font-weight:600;padding:9px 14px;cursor:pointer}
+.progress{height:8px;background:var(--line);border-radius:99px;overflow:hidden;margin:8px 0 2px}
+.progress i{display:block;height:100%;background:var(--leaf);width:0;transition:width .3s}
+.hint{font-size:.8rem;color:var(--muted)}
+/* packing */
+.packing{columns:2 220px;column-gap:16px}
+.packing label{display:flex;gap:8px;align-items:center;break-inside:avoid;padding:4px 0}
+.packing h4{margin:10px 0 2px;font:700 .72rem "Space Mono",monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--sea)}
+/* itinerary */
+details.day{background:var(--card);border:1px solid var(--line);border-radius:16px;margin-bottom:10px;overflow:hidden}
+details.day summary{list-style:none;cursor:pointer;padding:14px;display:flex;gap:12px;align-items:center}
+details.day summary::-webkit-details-marker{display:none}
+.num{flex:none;width:38px;height:38px;border-radius:12px;background:var(--sun-2);color:#a35f05;display:grid;place-items:center;font:700 1rem "Space Mono",monospace}
+.day .when{font-size:.8rem;color:var(--muted)}
+.day .body{padding:0 14px 14px}
+.slot{display:grid;grid-template-columns:62px 1fr;gap:10px;padding:8px 0;border-top:1px dashed var(--line)}
+.slot time{font:700 .82rem "Space Mono",monospace;color:var(--sea)}
+.slot p{margin:2px 0 0;color:var(--muted);font-size:.9rem}
+.links{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.links a{font-size:.8rem;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 10px;background:#fff}
+/* costs */
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;font-size:.9rem}
+th,td{padding:9px 10px;text-align:left;border-bottom:1px solid var(--line)}
+th{font:700 .7rem "Space Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);background:#fff8ec}
+td.n{text-align:right;font-family:"Space Mono",monospace;white-space:nowrap}
+tfoot td{font-weight:700}
+.food{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px}
+.food div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px}
+.food b{display:block;font-family:"Baloo 2";font-size:1.05rem}
+footer{text-align:center;color:var(--muted);font-size:.8rem;padding:30px 16px}
+</style>
+</head>
+<body>
+<div class="demo-bar">Versão demo com dados fictícios · projeto de <a href="../../index.html#projetos">Monique Maccari</a></div>
+
+<header class="hero">
+  <div class="kicker">Verão · 15 noites</div>
+  <h1>Costa Verde e Rio</h1>
+  <div class="count" id="count" aria-live="polite"></div>
+  <div class="facts">
+    <div><small>Quando</small>7 → 21 de dezembro</div>
+    <div><small>Quem</small>6 pessoas</div>
+    <div><small>Roteiro</small>Rio · Ubatuba · Paraty · Ilha Grande</div>
+    <div><small>Custo estimado</small><span id="totalTop">—</span> por pessoa</div>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="Seções">
+  <a href="#tarefas">✅ Tarefas</a><a href="#mala">🎒 Mala</a><a href="#roteiro">🗺️ Roteiro</a><a href="#custos">💰 Custos</a><a href="#comidas">🍲 Comidas</a>
+</nav>
+
+<main>
+  <section id="tarefas">
+    <h2>Tarefas antes de viajar</h2>
+    <p class="lead">O que falta comprar, reservar e confirmar. Toque no quadrado para marcar como feito e na etiqueta para mudar quem cuida da tarefa.</p>
+    <div class="card">
+      <div class="filters" id="filters"></div>
+      <div class="progress"><i id="bar"></i></div>
+      <div class="hint" id="progressText"></div>
+      <div id="tasks"></div>
+      <form class="add" id="addForm"><input id="newTask" placeholder="Nova tarefa…" aria-label="Nova tarefa"><button>Adicionar</button></form>
+      <p class="hint">O que você marca fica salvo só neste navegador.</p>
+    </div>
+  </section>
+
+  <section id="mala">
+    <h2>Mala</h2>
+    <p class="lead">Lista para praia, trilha e passeio de barco.</p>
+    <div class="card packing" id="packing"></div>
+  </section>
+
+  <section id="roteiro">
+    <h2>Roteiro dia a dia</h2>
+    <p class="lead">Cada dia abre com horários, dicas e links de mapa.</p>
+    <div id="days"></div>
+  </section>
+
+  <section id="custos">
+    <h2>Custos estimados</h2>
+    <p class="lead">Valores aproximados por pessoa, em reais.</p>
+    <table id="costs"><thead><tr><th>Item</th><th>Detalhe</th><th>R$</th></tr></thead><tbody></tbody><tfoot></tfoot></table>
+  </section>
+
+  <section id="comidas">
+    <h2>Comidas para provar</h2>
+    <div class="food" id="food"></div>
+  </section>
+</main>
+
+<footer>Demo criada para o portfólio. Nomes, datas e valores são exemplos.</footer>
+
+<script>
+const PEOPLE = {A:"Ana", B:"Leo", both:"Os dois"};
+const START = new Date("2026-12-07T15:00:00-03:00");
+
+function tick(){
+  const el=document.getElementById("count"); let d=START-new Date();
+  if(d<=0){ el.innerHTML="<div><b>🌴</b><span>boa viagem!</span></div>"; return; }
+  const days=Math.floor(d/864e5), h=Math.floor(d/36e5)%24, m=Math.floor(d/6e4)%60;
+  el.innerHTML=`<div><b>${days}</b><span>dias</span></div><div><b>${h}</b><span>horas</span></div><div><b>${m}</b><span>min</span></div>`;
+}
+tick(); setInterval(tick,30000);
+
+// ---- tarefas
+const DEFAULT_TASKS=[
+  ["Comprar passagens aéreas","both",true],["Reservar casa em Ubatuba","A",true],["Alugar carro (8 → 15 dez)","B",false],
+  ["Comprar passagem de ônibus Rio → Ubatuba","A",false],["Reservar passeio de escuna em Paraty","B",false],
+  ["Reservar pousada em Ilha Grande","A",false],["Comprar ingresso do Cristo Redentor","both",false],
+  ["Seguro viagem","B",false],["Trocar dinheiro / ativar cartão","both",false],["Baixar mapas offline","A",false]
+];
+const KEY="demo-viagem-tarefas";
+let tasks; try{tasks=JSON.parse(localStorage.getItem(KEY))}catch(e){}
+if(!Array.isArray(tasks)) tasks=DEFAULT_TASKS.map(([t,o,d])=>({t,o,d}));
+let filter="all";
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(tasks))}catch(e){}};
+function renderTasks(){
+  const f=document.getElementById("filters");
+  const opts=[["all","Todas"],["A",PEOPLE.A],["B",PEOPLE.B],["todo","Pendentes"]];
+  f.innerHTML=opts.map(([k,l])=>`<button class="${filter===k?"on":""}" data-f="${k}">${l}</button>`).join("");
+  const list=tasks.map((x,i)=>({...x,i})).filter(x=>filter==="all"||(filter==="todo"?!x.d:(x.o===filter||x.o==="both")));
+  document.getElementById("tasks").innerHTML=list.map(x=>`<div class="task ${x.d?"done":""}">
+    <input type="checkbox" data-i="${x.i}" ${x.d?"checked":""} aria-label="Feito">
+    <span class="t">${x.t.replace(/</g,"&lt;")}</span>
+    <button class="chip ${x.o}" data-o="${x.i}">${PEOPLE[x.o]}</button></div>`).join("") || '<p class="hint">Nada aqui 🎉</p>';
+  const done=tasks.filter(x=>x.d).length;
+  document.getElementById("bar").style.width=(100*done/tasks.length)+"%";
+  document.getElementById("progressText").textContent=`${done} de ${tasks.length} feitas`;
+}
+document.addEventListener("click",e=>{
+  const t=e.target;
+  if(t.dataset.f){filter=t.dataset.f;renderTasks();}
+  if(t.dataset.o){const x=tasks[t.dataset.o];x.o={A:"B",B:"both",both:"A"}[x.o];save();renderTasks();}
+});
+document.addEventListener("change",e=>{if(e.target.dataset.i){tasks[e.target.dataset.i].d=e.target.checked;save();renderTasks();}});
+document.getElementById("addForm").addEventListener("submit",e=>{e.preventDefault();const v=document.getElementById("newTask").value.trim();if(!v)return;tasks.push({t:v,o:"both",d:false});document.getElementById("newTask").value="";save();renderTasks();});
+renderTasks();
+
+// ---- mala
+const PACK={"Praia":["Protetor solar","Chapéu","Canga","Óculos de sol","Garrafa de água"],
+  "Trilha":["Tênis","Repelente","Lanterna","Capa de chuva"],
+  "Barco":["Remédio para enjoo","Bolsa estanque","Toalha de microfibra"],
+  "Documentos":["Documento com foto","Cartão do seguro","Reservas no celular (offline)"]};
+const PKEY="demo-viagem-mala"; let packed; try{packed=JSON.parse(localStorage.getItem(PKEY))||{}}catch(e){packed={}}
+document.getElementById("packing").innerHTML=Object.entries(PACK).map(([g,items])=>`<h4>${g}</h4>`+items.map(it=>`<label><input type="checkbox" data-p="${it}" ${packed[it]?"checked":""}> ${it}</label>`).join("")).join("");
+document.getElementById("packing").addEventListener("change",e=>{packed[e.target.dataset.p]=e.target.checked;try{localStorage.setItem(PKEY,JSON.stringify(packed))}catch(err){}});
+
+// ---- roteiro
+const maps=q=>"https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(q);
+const DAYS=[
+ {d:"7 dez · seg",title:"Chegada ao Rio",slots:[["18h","Pouso no Galeão","Traslado de app até o centro, ~30–40 min."],["20h30","Jantar no centro histórico","Comida de boteco perto da Praça Mauá."],["21h30","Roda de samba na Pedra do Sal","Gratuita, até perto da meia-noite."]],links:[["Pedra do Sal","Pedra do Sal Rio de Janeiro"],["Praça Mauá","Praça Mauá Rio de Janeiro"]]},
+ {d:"8 dez · ter",title:"Rio → Ubatuba",slots:[["10h","Ônibus na Rodoviária Novo Rio","Cerca de 5h30 de viagem pela costa."],["16h","Check-in na casa","Praia das Toninhas a poucos minutos a pé."],["19h","Pôr do sol e espetinhos na praia",""]],links:[["Praia das Toninhas","Praia das Toninhas Ubatuba"]]},
+ {d:"10 dez · qui",title:"Paraty e Trindade",slots:[["9h","Centro histórico de Paraty","Ruas de pedra, igrejas e ateliês."],["11h","Passeio de escuna pela baía","Paradas para nadar em ilhas e praias."],["16h","Piscina natural do Cachadaço","Em Trindade, melhor com maré baixa."]],links:[["Centro histórico de Paraty","Centro Histórico Paraty"],["Cachadaço","Piscina Natural do Cachadaço Trindade"]]},
+ {d:"12 dez · sáb",title:"Picinguaba e Ilha das Couves",slots:[["8h30","Barco até a Ilha das Couves","Água transparente para snorkel."],["13h","Almoço na vila de Picinguaba","Peixe do dia e moqueca."],["17h","Praia da Almada","Mar calmo, bom para fim de tarde."]],links:[["Picinguaba","Picinguaba Ubatuba"],["Praia da Almada","Praia da Almada Ubatuba"]]},
+ {d:"15 dez · ter",title:"Angra dos Reis e Ilha Grande",slots:[["9h","Barco para Ilha Grande","Travessia de ~1h30."],["13h","Trilha até Lopes Mendes","Uma das praias mais bonitas do Brasil."]],links:[["Lopes Mendes","Praia de Lopes Mendes Ilha Grande"]]},
+ {d:"18 dez · sex",title:"Rio: Cristo e Jardim Botânico",slots:[["8h","Trem do Corcovado","Ir cedo para pegar menos fila e menos nuvem."],["11h","Parque Lage e Jardim Botânico","Sombra, café e arte."],["17h30","Pôr do sol no Arpoador",""]],links:[["Cristo Redentor","Cristo Redentor"],["Jardim Botânico","Jardim Botânico Rio de Janeiro"],["Arpoador","Arpoador Rio de Janeiro"]]},
+ {d:"21 dez · seg",title:"Volta",slots:[["7h","Saída para o aeroporto","Chegar 3h antes em voo internacional."]],links:[]}
+];
+document.getElementById("days").innerHTML=DAYS.map((x,i)=>`<details class="day" ${i===0?"open":""}><summary><span class="num">${i+1}</span><span><h3>${x.title}</h3><span class="when">${x.d}</span></span></summary>
+<div class="body">${x.slots.map(([t,a,b])=>`<div class="slot"><time>${t}</time><div><b>${a}</b>${b?`<p>${b}</p>`:""}</div></div>`).join("")}
+${x.links.length?`<div class="links">${x.links.map(([l,q])=>`<a href="${maps(q)}" target="_blank" rel="noopener">📍 ${l}</a>`).join("")}</div>`:""}</div></details>`).join("");
+
+// ---- custos
+const COSTS=[["Passagem aérea","ida e volta",1900],["Ônibus Rio → Ubatuba","1 trecho",85],["Casa em Ubatuba","7 noites, dividido por 6",980],["Carro alugado","7 dias, dividido por 6",320],["Escuna em Paraty","1 passeio",120],["Pousada em Ilha Grande","2 noites",520],["Hospedagem no Rio","4 noites",760],["Comida e passeios","estimativa",1400]];
+const fmt=n=>n.toLocaleString("pt-BR");
+const total=COSTS.reduce((s,x)=>s+x[2],0);
+document.querySelector("#costs tbody").innerHTML=COSTS.map(([a,b,c])=>`<tr><td>${a}</td><td>${b}</td><td class="n">${fmt(c)}</td></tr>`).join("");
+document.querySelector("#costs tfoot").innerHTML=`<tr><td colspan="2">Total por pessoa</td><td class="n">${fmt(total)}</td></tr>`;
+document.getElementById("totalTop").textContent="R$ "+fmt(total);
+
+// ---- comidas
+const FOOD=[["Moqueca","peixe no leite de coco e dendê"],["Açaí","na tigela, com banana e granola"],["Tapioca","doce ou salgada, na praia"],["Bobó de camarão","creme de mandioca"],["Bolinho de feijoada","petisco de boteco"],["Pastel de feira","com caldo de cana"]];
+document.getElementById("food").innerHTML=FOOD.map(([a,b])=>`<div><b>${a}</b>${b}</div>`).join("");
+</script>
+</body>
+</html>

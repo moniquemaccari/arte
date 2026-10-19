@@ -184,3 +184,8 @@ h3 { font-size: 1.25rem; font-weight: 500; margin: 2rem 0 .75rem; }
 .statement-text { max-width: 44rem; margin-top: 2rem; }
 .statement-text p { font-family: var(--serif); font-weight: 300; font-size: clamp(1.1rem, 1.6vw, 1.3rem); line-height: 1.6; }
 .statement-src { color: var(--muted); font-size: .85rem; margin-top: 1.5rem; }
+
+.project { margin-top: 2rem; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: clamp(1.25rem, 3vw, 2rem); max-width: 46rem; }
+.project h3 { margin: .25rem 0 .75rem; font-size: 1.5rem; }
+.project p { margin: 0 0 1rem; }
+.hint-small { color: var(--muted); font-size: .85rem; }

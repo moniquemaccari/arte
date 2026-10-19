@@ -4,7 +4,7 @@
 
   // ---------- Traduções (o português vem do próprio HTML) ----------
   const EN = {
-    "nav.works": "Works", "nav.about": "About", "nav.cv": "CV", "nav.press": "Press", "nav.contact": "Contact",
+    "nav.works": "Works", "nav.about": "About", "nav.cv": "CV", "nav.projects": "Projects", "nav.press": "Press", "nav.contact": "Contact",
     "hero.eyebrow": "Visual artist · Painting · Drawing · Photography",
     "hero.lede": "Portraits of loved ones, landscapes and colour. Oil painting, pastel, ink and photography — from Caxias do Sul and Porto Alegre to Australia.",
     "hero.cta": "View works",
@@ -61,6 +61,12 @@
     "cv.aula": "Lecture and experience reports by Studio P members",
     "cv.aula2": "at the exhibition <em>Quanto mais eu pinto…</em>, Sala Fahrion, UFRGS",
     "press.p12": "Artistic creation revitalises the Germina Multisector Incubator",
+    "proj.title": "Projects",
+    "proj.kicker": "Web app · 2026",
+    "proj.name": "Group trip planner",
+    "proj.desc": "A mobile website I made to organise a 15-night trip along Brazil's Costa Verde and Rio de Janeiro for 6 people. It brings everything together: a countdown, a to-do list showing who handles each task, a packing list, a day-by-day itinerary with times and maps, transport options, cost estimates and a food guide.",
+    "proj.note": "The demo uses fictional data; the original site holds the group's real bookings.",
+    "proj.cta": "Open the demo ↗",
     "press.p9": "Short film “Na UFRGS” — Monique appears painting",
     "press.video": "video",
     "press.p8": "Artist profile on the Studio P website",
