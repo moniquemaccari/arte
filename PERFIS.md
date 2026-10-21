@@ -15,7 +15,7 @@ Objetivo: todos os perfis com a mesma bio, a mesma foto, localização na Austr�
 
 ## Lista
 
-- [ ] **Site novo** — publicar no GitHub Pages (depois, se quiser, um domínio próprio, por exemplo moniquemaccari.com)
+- [ ] **Site novo** — publicar no GitHub Pages e ligar o domínio **moniquemaccari.com** (passo a passo em `DOMINIO.md`)
 - [ ] **LinkedIn** — reativar a conta e recuperar a senha
   - [ ] Título: *Visual Artist · Painter · Gold Coast*
   - [ ] Localização: Gold Coast, Queensland, Australia
