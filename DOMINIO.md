@@ -2,15 +2,14 @@
 
 O site já funciona em qualquer endereço (só usa caminhos relativos). Para ligar o domínio:
 
-## 1. Comprar o domínio
-- Em porkbun.com (ou Cloudflare), comprar **moniquemaccari.com** por 1 ano, com renovação automática.
-- Não comprar extras (hospedagem, e-mail, SSL): o GitHub Pages já dá hospedagem e HTTPS.
+## 1. Comprar o domínio ✅
+Comprado na **Cloudflare** em 31/10/2026, válido até 31/10/2027. Conferir em *Manage domain* que a **renovação automática** está ligada.
 
 ## 2. Ativar o GitHub Pages
 Repositório `moniquemaccari/arte` → **Settings → Pages** → *Deploy from a branch* → branch do site, pasta `/ (root)` → Save.
 
-## 3. Registros de DNS (no painel do registrador)
-Apagar os registros que vierem por padrão (parking) e criar:
+## 3. Registros de DNS (Cloudflare → moniquemaccari.com → DNS → Records)
+Criar os registros abaixo com **Proxy status: DNS only** (nuvem cinza), senão o GitHub não consegue emitir o certificado HTTPS:
 
 | Tipo | Nome / Host | Valor |
 |---|---|---|
@@ -21,11 +20,10 @@ Apagar os registros que vierem por padrão (parking) e criar:
 | CNAME | www | moniquemaccari.github.io |
 
 ## 4. Ligar o domínio no repositório
-- Mover `tools/dominio/CNAME` para a raiz do repositório (é um arquivo de uma linha: `moniquemaccari.com`) e publicar.
+- O arquivo `CNAME` (uma linha: `moniquemaccari.com`) já está na raiz do repositório. ✅
 - Em **Settings → Pages → Custom domain**, conferir que aparece `moniquemaccari.com` e esperar o "DNS check successful" (de minutos até algumas horas).
 - Marcar **Enforce HTTPS**.
 
-O `CNAME` fica guardado em `tools/dominio/` até o domínio estar comprado: se ele for para a raiz antes, o endereço do GitHub passa a redirecionar para um domínio que ainda não existe e o site sai do ar.
 
 ## 5. Depois
 - Trocar os links no Instagram, Behance, LinkedIn, Lattes, CV e assinatura de e-mail para https://moniquemaccari.com
